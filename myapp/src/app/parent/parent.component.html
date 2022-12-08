@@ -1,0 +1,6 @@
+<h1>This is {{title}}</h1>
+<h2>My favorite books</h2>
+<ul *ngFor="let book of favBooks">
+    <li> {{book.title}}</li>
+</ul>
+<app-child (bookTitleCreated)="onBookAdded($event)"></app-child>
